@@ -11,7 +11,7 @@
 
   Install with [npm(2)](http://npmjs.org):
 
-    $ component install duncaen/reverse-path
+    $ npm install reverse-path
 
 ## Usage
 
