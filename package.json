@@ -1,0 +1,32 @@
+{
+  "name": "reverse-path",
+  "version": "0.0.1",
+  "description": "Turns Express-style paths to urls by passing parameters",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^1.20.0"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/duncaen/reverse-path"
+  },
+  "keywords": [
+    "path",
+    "reverse",
+    "express",
+    "route",
+    "router",
+    "url",
+    "params"
+  ],
+  "author": "Duncan Overbruck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duncaen/reverse-path/issues"
+  },
+  "homepage": "https://github.com/duncaen/reverse-path"
+}
