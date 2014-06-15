@@ -1,3 +1,4 @@
+[![Build Status](https://drone.io/github.com/Duncaen/reverse-path/status.png)](https://drone.io/github.com/Duncaen/reverse-path/latest)
 
 # reverse-path
 
