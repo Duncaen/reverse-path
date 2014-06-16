@@ -26,6 +26,7 @@ var TESTS = [
     ['/:foo(.*)/:bar', {foo: 'abc/def/ghi', bar: 'jkl'}, '/abc/def/ghi/jkl', {}],
     ['/:foo(.*)/:bar?', {foo: 'abc/def/ghi'}, '/abc/def/ghi/', {}],
     ['/:foo(.*)/:bar?', {foo: 'abc/def/ghi', bar: 'jkl'}, '/abc/def/ghi/jkl', {}],
+    ['/:year(\\d{4})/:month(\\d{2})/:day(\\d{2})', {year: '2014', month: '06', day: '16'}, '/2014/06/16', {}],
 
     // without prefix slash
     ['test', {}, 'test', {}],
