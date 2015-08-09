@@ -54,6 +54,12 @@ var TESTS = [
 ];
 
 describe('reverse-path', function() {
+
+    afterEach(function () {
+
+      assert.equal(global.params, undefined);
+    });
+
     it('should throw an exception when required keys aren\'t provided', function() {
         assert.throws(function() {
             reversePath('/:foo/:bar', { foo: 'test' });

@@ -17,28 +17,28 @@ var PATH_REGEXP = new RegExp([
 ].join('|'), 'g');
 
 function reversePath(path, params, options) {
-    this.index = 0;
-    this.params = params || {};
-    this.options = options || {};
+    var index = 0;
+    params = params || {};
+    options = options || {};
 
     return path.replace(PATH_REGEXP, replace);
-}
 
-function replace(match, escaped, prefix, key, capture, group, optional, escape) {
-    if(escaped) return escaped;
-    if(escape) return escape;
+    function replace(match, escaped, prefix, key, capture, group, optional, escape) {
+        if(escaped) return escaped;
+        if(escape) return escape;
 
-    prefix = prefix || '';
+        prefix = prefix || '';
 
-    var value = this.params[key || this.index++];
+        var value = params[key || index++];
 
-    if(value === undefined) {
-        if(optional) {
-            value = '';
-        } else {
-            throw new Error('Parameter "' + key + '" is required.');
+        if(value === undefined) {
+            if(optional) {
+                value = '';
+            } else {
+                throw new Error('Parameter "' + key + '" is required.');
+            }
         }
-    }
 
-    return prefix + value;
+        return prefix + value;
+    }
 }
