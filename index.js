@@ -1,3 +1,6 @@
+
+'use strict';
+
 module.exports = reversePath;
 
 // regex from https://github.com/component/path-to-regexp

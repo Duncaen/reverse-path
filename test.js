@@ -57,7 +57,7 @@ describe('reverse-path', function() {
 
     afterEach(function () {
 
-      assert.equal(global.params, undefined);
+      assert.strictEqual(global.params, undefined);
     });
 
     it('should throw an exception when required keys aren\'t provided', function() {
